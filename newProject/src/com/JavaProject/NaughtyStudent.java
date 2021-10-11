@@ -1,0 +1,17 @@
+package com.JavaProject;
+
+import java.util.List;
+
+public class NaughtyStudent extends Student{
+
+
+    public NaughtyStudent(List<Double> grades) {
+        super(grades);
+    }
+
+    @Override
+    public double getAverageGrade() {
+//        return super.getAverageGrade() * 1.1;
+        return super.getAverageGrade() * 0.1 + (super.getAverageGrade());
+    }
+}

@@ -6,8 +6,9 @@ public class Trader extends  Account{
     public String name;
 
 
-    Trader(int value) {
+    public Trader(String name) {
         super(value);
+        this.name = name;
 
         this.value = value;
     }

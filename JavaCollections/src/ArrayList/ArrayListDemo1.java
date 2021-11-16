@@ -1,6 +1,7 @@
-package JavaCollections;
+package ArrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo1 {
@@ -45,6 +46,12 @@ public class ArrayListDemo1 {
             System.out.println(al.get(a));
         }
 
+        //Get values from ArrayList using Iterator
+        Iterator lt = al.iterator();
+
+        while(lt.hasNext()) {
+            System.out.println(lt.next());
+        }
 
 
         //Type Bound ArrayList

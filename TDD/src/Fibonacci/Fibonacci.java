@@ -2,26 +2,48 @@ package Fibonacci;
 
 public class Fibonacci {
 
+    int maxNumber = 10;
+    int nextNumber = 1;
 
-    public Integer fibonacci(int n){
 
-        int fib = 0;
+//    public Integer fibonacci(int n){
+//
+//        int fib = 0;
+//
+//        if (n == 0){
+//
+//            fib = 0;
+//
+//        }else if (n == 1 || n == 2) {
+//
+//            fib = 1;
+//
+//        }else {
+//
+//            fib = fibonacci(n - 1) + fibonacci(n - 2);
+//        }
+//
+//        return fib;
 
-        if (n == 0){
+//    }
 
-            fib = 0;
+    public int fibbi(int previousNumber){
 
-        }else if (n == 1 || n == 2) {
+     for (int i = 1; i <= maxNumber; ++i){
 
-            fib = 1;
+         System.out.println(previousNumber+ " ");
 
-        }else {
 
-            fib = fibonacci(n - 1) + fibonacci(n - 2);
-        }
+         int sum = previousNumber + nextNumber;
+         previousNumber = nextNumber;
+         nextNumber = sum;
 
-        return fib;
-    }
+     }
+
+        return 0;
+ }
+
+
 
 
 }

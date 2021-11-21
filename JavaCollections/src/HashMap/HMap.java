@@ -21,7 +21,7 @@ public class HMap {
         //getting a value using key
         System.out.println(hm.get(2));
         
-        //removing calue from the mapList
+        //removing value from the mapList
         hm.remove(3);
 
         System.out.println("Print value after removing key 3 " + hm);

@@ -1,21 +1,26 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Account {
 
-    private int value;
+    private final List<Trade> tradeList = new ArrayList<>();
+    private double value;
 
 //    public Account(int value) {
-//        super();
 //        this.value = value;
 //    }
 
-    public int getValue() {
+
+    public double getValue() {
         return value;
     }
 
-//    public void setValue(int value) {
-//
-//        value = (int) (this.getPrice() * this.getQuantity());
-//        this.value = value;
-//    }
+    public double setValue() {
+        for(Trade t: tradeList){
+            value += t.getQuantity() * t.getPrice();
+        }
+        return value;
+    }
 }

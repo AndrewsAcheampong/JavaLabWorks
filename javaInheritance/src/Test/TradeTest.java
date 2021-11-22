@@ -1,4 +1,6 @@
-package com.company;
+package Test;
+
+import com.company.Trade;
 
 import static org.junit.jupiter.api.Assertions.*;
 

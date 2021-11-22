@@ -55,6 +55,7 @@ public class Trade {
         return price;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -62,6 +63,7 @@ public class Trade {
         Trade trade = (Trade) o;
         return id == trade.id && quantity == trade.quantity && Double.compare(trade.price, price) == 0 && Objects.equals(symbol, trade.symbol);
     }
+
 
     @Override
     public int hashCode() {
